@@ -1,0 +1,39 @@
+:root {
+    --background: #333; /* Le fond de la page, peut être une image avec le "url('LIEN')" - Default #333 */
+    --background-position: center; /* La position du fond sur la page - Default center */
+    --background-size: cover; /* La taille du fond sur la page (uniquement avec les images) - Default cover */
+    --background-repeat: no-repeat; /* Répétition de l'image sur le fond - Default no-repeat */
+    --background-brightness: 100%; /* Le niveau de luminosité du fond de la page - Default 100% */
+    --background-contrast: 100%; /* Le niveau de contrast du fond de la page - Default 100% */
+    --background-saturation: 100%; /* Le niveau de saturation du fond de la page - Default 100% */
+    --background-grayscale: 0%; /* Le niveau de gris du fond de la page - Default 0% */
+    --background-sepia: 0%; /* Le sepia du fond de la page - Default 0% */
+    --background-blur: 0px; /* Le flou du fond de la page - Default 0px */
+    --main-color: white; /* La couleur du text sur la page - Default white */
+}
+
+body, .profile-manga {
+    color: var(--main-color) !important;
+    background: var(--background) var(--background-position)/var(--background-size) no-repeat;
+    filter: blur(var(--background-blur)) brightness(var(--background-brightness)) contrast(var(--background-contrast)) saturate(var(--background-saturation)) grayscale(var(--background-grayscale)) sepia(var(--backgroundsepia));
+}
+
+#menu-item-916 a, .url, .h5 a, .h4, .wp-manga-chapter a, .post-title h1, .post-content_item div h5, .comment-content p {
+    color: var(--main-color) !important;
+}
+
+.ion-checkmark, .c-selectpicker.selectpicker_chapter.selectpicker.single-chapter-select, .selectpicker.host-select {
+    filter: invert() !important;
+}
+
+.summary_image, .summary_content, #comment, #author, #email, #url {
+    border-radius: 5px;
+    border: #444 solid 2px;
+    background: #555 !important;
+}
+
+#comment:hover, #author:hover, #email:hover, #url:hover {
+    border-radius: 5px;
+    border: #555 solid 2px;
+    background: #666 !important;
+}
