@@ -27,7 +27,7 @@ body, #main, .main {
 }
 
 .no-style.ng-scope:hover, .two.cell.twelve-mobile i18n .no-style.ng-scope , .applications-connector.ng-scope h2 span i18n span, .drawing-zone, .rno-style.ng-scopeow.reduce-block-six.ng-scope article, .row.reduce-block-six.twelve-mobile.ng-scope article, .cell .horizontal-spacing, .rigid-grid.cell.twelve, .flex-row.align-center, .zero-mobile-fat-mobile.flex-row.reduce-block-eight.scroll-x {
-    color: black !important;
+    color: var(--second-color) !important;
 }
 
 .applications-item.ng-scope, .applications-item.connector.ng-isolate-scope {
@@ -36,7 +36,7 @@ body, #main, .main {
 
 .applications-item.ng-scope:hover, .applications-item.connector.ng-isolate-scope:hover {
     background: rgba(255, 255, 255, 0.5);
-    color: black;
+    color: var(--second-color);
 }
 
 .ng-valid.ng-dirty.ng-valid-parse, .welcome-text.ng-scope {
