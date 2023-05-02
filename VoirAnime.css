@@ -18,7 +18,7 @@ body, .profile-manga {
     filter: blur(var(--background-blur)) brightness(var(--background-brightness)) contrast(var(--background-contrast)) saturate(var(--background-saturation)) grayscale(var(--background-grayscale)) sepia(var(--backgroundsepia));
 }
 
-#menu-item-916 a, .url, .h5 a, .h4, .wp-manga-chapter a, .post-title h1, .post-content_item div h5, .comment-content p {
+#menu-item-916 a, .url, .h5 a, .h4, .wp-manga-chapter a, .post-title h1, .post-content_item div h5, .comment-content p, .comment-author * {
     color: var(--main-color) !important;
 }
 
@@ -38,15 +38,9 @@ body, .profile-manga {
     background: #666 !important;
 }
 
-
-
 .jw-icon-settings:hover .jw-svg-icon-settings {
     transform: rotate(360deg);
     transition: all 0.3s;
-}
-
-.comment-author * {
-  color: var(--main-color);
 }
 
 .chapter-video-content-validator form p .btn[type=submit][disabled] {
