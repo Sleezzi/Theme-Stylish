@@ -37,3 +37,45 @@ body, .profile-manga {
     border: #555 solid 2px;
     background: #666 !important;
 }
+
+
+
+.jw-icon-settings:hover .jw-svg-icon-settings {
+    transform: rotate(360deg);
+    transition: all 0.3s;
+}
+
+.comment-author * {
+  color: var(--main-color);
+}
+
+.chapter-video-content-validator form p .btn[type=submit][disabled] {
+  background: red !important;
+}
+
+.chapter-video-content-validator form p .btn[type=submit] {
+  background: green !important;
+  transition: all 0.5s;
+}
+
+.block.block-left:hover {
+  border: 2px solid gray;
+  transition: all 0.1s;
+}
+
+#manga-discussion > h4, .wp-pagenavi *{
+  color: gray !important;
+}
+
+.extend, .pages, .current, .previouspostslink, .nextpostslink {
+  background: var(--background) !important;
+}
+
+.c-tabs-content > .active > a::after {
+  background: black !important;
+}
+
+span.current[aria-current=page], .previouspostslink, .nextpostslink {
+  color: var(--main-color) !important;
+  font-weight: 1000;
+}
