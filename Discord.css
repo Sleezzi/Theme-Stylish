@@ -1,0 +1,455 @@
+/*                 Made by Sleezzi                 */
+/* Copyright © Sleezzi - 2022 - All right reserved */
+
+:root {
+/*                                            Text:																																						 */
+    --main-color: blueviolet;
+    --second-color: white;
+    --text-color: var(--second-color);
+    --hover-color: rgb(132, 0, 255);
+    --success-color: #43b581;
+    --danger-color: #982929;
+    --channel-unread: rgb(255, 10, 10);
+    --channel-color: rgba(255, 255, 255, 0.3);
+    --muted-color: rgba(255, 255, 255, 0.1);
+    --channel-text-selected: #fff;
+    --url-color: var(--main-color);
+    --main-font: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace;
+    --mention-background-color: rgba(255, 0, 0, 0.5);
+/*                                            Background:																																						 */
+    --background: black; /*url(https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?resize=476%2C280&ssl=1); */
+    --background-shading: 100%;
+    --background-overlay: rgba(0, 0, 0, 0.6); 
+    --background-position: center;
+    --background-size: cover;
+    --background-repeat: no-repeat;
+    --background-attachment: fixed;
+    --background-brightness: 100%;
+    --background-contrast: 100%;
+    --background-saturation: 100%;
+    --background-invert: 0%;
+    --background-grayscale: 0%;
+    --background-sepia: 0%;
+    --background-blur: 0px;
+/*                                            User Background & Banner:																																						 */
+    --user-background: red; /*url(https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?resize=476%2C280&ssl=1); */
+    --user-background-shading: var(--background-shading);
+    --user-background-overlay: var(--background-overlay);
+    --user-background-position: var(--background-position);
+    --user-background-size: var(--background-size);
+    --user-background-repeat: var(--background-repeat);
+    --user-background-attachment: var(--background-attachment);
+    --user-background-brightness: var(--background-brightness);
+    --user-background-contrast: var(--background-contrast);
+    --user-background-saturation: var(--background-saturation);
+    --user-background-invert: var(--background-invert);
+    --user-background-grayscale: var(--background-grayscale);
+    --user-background-sepia: var(--background-sepia);
+    --user-background-blur: var(--background-blur);
+    --user-banner: blue; /* url(https://sleezzi.github.io/TinyWorld/icons/user-banner.gif); */
+/*                                            Home Icon & Animation:																																						 */
+    --home-icon: url(https://sleezzi.github.io/TinyWorld/icons/discord.svg);
+    --home-position: center;
+    --home-size: 40px;
+    --home-animation: easter-egg;
+    --home-animation-duration: 0.5s;
+}
+
+@keyframes rotate {
+     from {
+        transform: rotate(0deg);
+    
+    } to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes swipe-left {
+    0% {
+        background-position-x: -50px;
+    }
+    70% {
+        background-position-x: 12px;
+    }
+    100% {
+        background-position: var(--home-position);
+    }
+}
+@keyframes swipe-right {
+    0% {
+        background-position-x: 50px;
+    }
+    70% {
+        background-position-x: -12px;
+    }
+    100% {
+        background-position: var(--home-position);
+    }
+}
+@keyframes swipe-top {
+    0% {
+        background-position-y: -50px;
+    }
+    70% {
+        background-position-y: 12px;
+    }
+    100% {
+        background-position: var(--home-position);
+    }
+}
+@keyframes swipe-down {
+    0% {
+        background-position-y: 50px;
+    }
+    70% {
+        background-position-y: -12px;
+    }
+    100% {
+        background-position: var(--home-position);
+    }
+}
+@keyframes fade-to {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 100%;
+    }
+}
+@keyframes easter-egg {
+    from {
+        background: url(https://sleezzi.github.io/TinyWorld/icons/discord.svg) no-repeat var(--home-position)/var(--home-size);
+    } to {
+        background: url(https://sleezzi.github.io/TinyWorld/icons/discord-wink.svg) no-repeat var(--home-position)/var(--home-size);
+    }
+}
+
+div.userPopoutOuter-1OHwPL.userProfileOuter-2tQwNf.userProfileOuterUnthemed-11rPfA.profileColors-2AgAV4, div.userPopoutInner-nv9Y92.userProfileInner-1ngKnf {
+  background: var(--user-background) var(--user-background-position)/var(--user-background-size) var(--user-background-repeat)  !important;
+  filter: blur(var(--user-background-blur)) brightness(var(--user-background-brightness)) contrast(var(--user-background-contrast)) saturate(var(--user-background-saturation)) grayscale(var(--user-background-grayscale)) sepia(var(--user-backgroundsepia));
+}
+
+body, .container-1eFtFS, div[class="layer-86YKbF"] > * {
+  font-family: var(--main-font);
+  background: var(--background) var(--background-position)/var(--background-size) var(--background-repeat)  !important;
+  filter: blur(var(--background-blur)) brightness(var(--background-brightness)) contrast(var(--background-contrast)) saturate(var(--background-saturation)) grayscale(var(--background-grayscale)) sepia(var(--backgroundsepia));
+}
+
+h1, h2, h3, h4, h5, h6, span, p, a, label {
+  color: var(--text-color) !important;
+}
+
+body, .container-1eFtFS > nav, .scrollerContent-2SW0kQ.content-yjf30S, .scroller-WSmht3.thin-RnSY0a.scrollerBase-1Pkza4.fade-27X6bG, form[class="form-3gdLxP"], .chatContent-3KubbW, div[class="sidebar-1tnWFu"], div[class="interactive-26HRN_ interactive-iyXY_x linkButton-2NshQj"], div[class="wrapper-3kah-n"], div[class="wrapper-3kah-n"] > img, div[class="chat-2ZfjoI"], div[class="searchBar-3TnChZ"], ul[class="content-yjf30S"], .message-2CShn3 > div > div, div[class="sidebar-1tnWFu"] > nav, main.container-2cd8Mz, div[class="layer-86YKbF"] > * > * > *, div[class="contentColumn-1C7as6 contentColumnDefault-3eyv5o"], div.contentRegion-3HkfJJ > * > *, div[class="accountProfilePopoutWrapper-3GskID"] > *, div[class="userProfileModalOuter-2wdWjU userProfileOuter-2tQwNf userProfileOuterUnthemed-11rPfA profileColors-2AgAV4 theme-dark"] > *, .container-ZMc96U, .pageWrapper-2PwDoS, div[class="tabBarItem-30Te4- item-2GWPIy selected-1sf9UK themed-qqoYp3"], div.content-1jQy2l > *, .container-2o3qEW > * > *, .container-2RRFHK.fixClipping-3GOd_d{
+  color: var(--text-color);
+  font-family: var(--main-font);
+  background: transparent  !important;
+}
+
+.container-2RRFHK.fixClipping-3GOd_d:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  filter: blur(10px);
+}
+
+.theme-light > * > * {
+  background: rgba(255, 255, 255, 0.5) !important;
+  color: var(--text-color) !important;
+}
+
+.member-2gU6Ar.member-48YF_l.container-1oeRFJ.clickable-28SzVr, div[class="flex-2S1XBF flex-3BkGQD horizontalReverse-60Katr horizontalReverse-2QssvL flex-3BkGQD directionRowReverse-HZatnx justifyStart-2Mwniq alignStretch-Uwowzr noWrap-hBpHBz footer-IubaaS footer-3ie9JP footerSeparator-3U8YsT"] {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+.activityText-1rR-8O > strong {
+  color: var(--main-color);
+}
+
+.theme-dark > * > * {
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: var(--text-color) !important;
+}
+
+div[class="accountProfilePopoutWrapper-3GskID"], div[class="userProfileModalOuter-2wdWjU userProfileOuter-2tQwNf userProfileOuterUnthemed-11rPfA profileColors-2AgAV4 theme-dark"]
+{
+  filter: blur(var(--background-blur)) brightness(var(--background-brightness)) contrast(var(--background-contrast)) saturate(var(--background-saturation)) grayscale(var(--background-grayscale)) sepia(var(--backgroundsepia));
+  background: var(--user-background) var(--user-background-position)/var(--user-background-size) no-repeat  !important;
+  filter: blur(var(--user-background-blur)) brightness(var(--user-background-brightness)) contrast(var(--user-background-contrast)) saturate(var(--user-background-saturation)) grayscale(var(--user-background-grayscale)) sepia(var(--user-backgroundsepia));
+}
+
+div[class="userPopoutInner-nv9Y92 userProfileInner-1ngKnf userProfileInnerThemedNonPremium-2AJg-H"] {
+  filter: blur(var(--background-blur)) brightness(var(--background-brightness)) contrast(var(--background-contrast)) saturate(var(--background-saturation)) grayscale(var(--background-grayscale)) sepia(var(--backgroundsepia));
+}
+.panels-3wFtMD {
+  border: 2px rgba(0, 0, 0, 0.1) solid;
+  border-bottom: 0;
+  border-radius: 5px 5px 0 0;
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+
+.form-3gdLxP:before {
+  display: none;
+}
+
+button[class="container-x8Y1ix"]:hover {
+  background: #a7a7a7;
+}
+
+.item-3mHhwr.item-2GWPIy.selected-1sf9UK[aria-controls="online-tab"]:before {
+  content: "🟢 - ";
+  margin: 0 2px 0 0;
+}
+
+.item-3mHhwr.item-2GWPIy.selected-1sf9UK:before {
+  content: "🌍 - ";
+  margin: 0 2px 0 0;
+}
+
+.item-3mHhwr.item-2GWPIy.selected-1sf9UK[aria-label="En attente"]:before {
+  content: "⌛ - ";
+  margin: 0 2px 0 0;
+}
+
+.item-3mHhwr.item-2GWPIy.selected-1sf9UK[aria-controls="blocked-tab"]:before {
+  content: "⛔ - ";
+  margin: 0 2px 0 0;
+}
+
+.item-3mHhwr.item-2GWPIy.selected-1sf9UK[aria-controls="add_friend-tab"]:before {
+  content: "";
+  margin: 0 2px 0 0;
+}
+
+.socialLinks-3ywLUf > a[href="https://twitter.com/discord"] > svg {
+  color: aqua;
+}
+
+.socialLinks-3ywLUf > a[title="Facebook"] > svg {
+  color: blue;
+}
+
+.socialLinks-3ywLUf > a[title="YouTube"] > svg {
+  color: red;
+}
+
+div[class="categoryItem-Kc_HK_ container-1oeRFJ selected-1-Z6gm selectedCategoryItem-ZjqSui"] > div, .colorGreen-jIPCAS, .selected-1sf9UK, button[type="submit"], div.item-3mHhwr.addFriend-emTWY1.item-2GWPIy, div.item-3mHhwr.addFriend-emTWY1.item-2GWPIy > span, button[class="button-1rU5v7 button-ejjZWC lookFilled-1H2Jvj colorBrand-2M3O3N sizeMedium-2oH5mg grow-2T4nbg"], .relationshipButtons-3ByBpj > button, div[class="iconVisibility-vptxma wrapper-NhbLHG modeSelected-3DmyhH"] > div > a:before {
+  background: var(--main-color) !important;
+  color: white !important;
+}
+
+div[class="iconVisibility-vptxma wrapper-NhbLHG modeSelected-3DmyhH"] > div > a:before {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+*::selection {
+  background: var(--hover-color) !important;
+}
+
+.scroller-1ox3I2.thin-RnSY0a.scrollerBase-1Pkza4.fade-27X6bG.customTheme-3QAYZq,
+div[class="sidebar-1tnWFu"] > nav > div[class="container-1-ERn5 clickable-vvKY2q"] {
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.mainContent-uDGa6R {
+  text-align: center;
+}
+
+div[class="iconVisibility-3pLDEs wrapper-1S43wv wrapperCommon-I1TMDb clickable-2AoIYN"], div[class="iconVisibility-3pLDEs wrapper-1S43wv wrapperCommon-I1TMDb collapsed-2KOacR clickable-2AoIYN"] {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+div.mainContent-uDGa6R:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 15%;
+  background: linear-gradient(.90turn, transparent, var(--main-color) 60%);
+  border-radius: 5px 0 0 5px;
+  left: calc(85% - 20px);
+  top: 50%;
+  transition: opacity 0.25s, left 0.5s;
+}
+
+div.mainContent-uDGa6R:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 15%;
+  opacity: 1;
+  border-radius: 0 5px 5px 0;
+  background: linear-gradient(.90turn, var(--main-color) 60%, transparent);
+  left: 29px;
+  top: 50%;
+  transition: opacity 1s;
+  transition: opacity 0.25s, left 0.5s;
+}
+
+.collapsed-2KOacR > div:before {
+  content: "";
+  position: absolute;
+  index: -1;
+  height: 2px;
+  width: 15%;
+  opacity: 0;
+  border-radius: 0 5px 5px 0;
+  background: linear-gradient(.90turn, var(--main-color) 60%, transparent);
+  left: 50%;
+  top: 50%;
+  transition: opacity 0.25s, left 0.5s;
+}
+
+.collapsed-2KOacR > div:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 15%;
+  opacity: 0;
+  border-radius: 0 5px 5px 0;
+  background: linear-gradient(.90turn, var(--main-color) 60%, transparent);
+  left: 50%;
+  top: 50%;
+  transition: opacity 0.25s, left 0.5s;
+}
+
+button[class="button-12Fmur enabled-9OeuTA button-ejjZWC lookBlank-FgPMy6 colorBrand-2M3O3N grow-2T4nbg button-12Fmur"] > div > svg {
+  transition: transform 0.5s;
+}
+
+button[class="button-12Fmur enabled-9OeuTA button-ejjZWC lookBlank-FgPMy6 colorBrand-2M3O3N grow-2T4nbg button-12Fmur"]:hover > div > svg {
+  transform: rotatey(360deg);
+}
+
+button[class="button-12Fmur enabled-9OeuTA button-ejjZWC lookBlank-FgPMy6 colorBrand-2M3O3N grow-2T4nbg button-12Fmur"][aria-label="Paramètres utilisateur"]:hover > div > svg {
+  transform: rotatez(360deg);
+}
+
+section[class="title-31SJ6t container-ZMc96U themed-Hp1KC_"], div[class="search-2Mwzzq"] > *, div[class="searchBar-3TnChZ"] > button {
+  background: rgba(0, 0, 0, 0.2) !important;
+  transition: background 0.3s;
+}
+
+section[class="title-31SJ6t container-ZMc96U themed-Hp1KC_"]:hover, div[class="search-2Mwzzq"]:hover > *, div[class="searchBar-3TnChZ"]:hover > button {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+div[class="children-3xh0VB"]:after {
+  height: 0;
+  width: 0;
+}
+
+h2[class="defaultColor-1EVLSt heading-lg-semibold-14ouVv defaultColor-1GKx81 footerTitle-3Bslxi"], div[class="text-xs-bold-9jfMvZ optionHeader-27AHfD"], div[class="text-md-normal-2rFCH3 subtitle-3m-md1"], span.username-3_PJ5r, span[class="applicationInstallButtonText-28e06z"], .username-h_Y3Us, .nickname-3P1RuO, time, div[class="userPopoutOverlayBackground-3A0Pcz overlayBackground-2aa7wt"] > * > * > *, span[class="applicationInstallButtonText-1dOirt"], div.userTag-3A4Fw4.nameTag-H6kSJ0 > *, span[class="applicationInstallButtonText-1dOirt"], div.userTag-3A4Fw4.nameTag-H6kSJ0 > * > * {
+  color: var(--text-color) !important;
+}
+
+.roleMention-11Aaqi, .mention {
+  color: var(--second-color) !important;
+  background: var(--mention-background-color);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+.unread-36eUEm {
+  transform: rotate(45deg);
+  height: 8px;
+  width: 8px;
+  border-radius: 0;
+  position: absolute;
+  left: -6px;
+  overflow: hidden !important;
+  border-radius: 2px;
+  background: var(--channel-unread);
+}
+
+.modeUnread-3Cxepe > div > a > div, .modeUnread-3Cxepe > div > a > div > svg {
+  color:  var(--channel-unread) !important;
+}
+
+.sidebar-1tnWFu:after {
+  content: "Tiny World" !important;
+  transition: content 3s;
+  width: calc(100% - 14px);
+  border-left: 2px rgba(0, 0, 0, 0.1) solid;
+  border-right: 2px rgba(0, 0, 0, 0.1) solid;
+  background: rgba(0, 0, 0, 0.1) !important;
+  padding: 5px;
+  color: var(--second-color) !important;
+}
+
+.panels-3wFtMD:after {
+  content: "by Sleezzi" !important;
+  position: absolute;
+  opacity: 0;
+  margin: 10px 0 0 78px;
+  transition: opacity 1s;
+  font-size: 10px;
+  color: var(--second-color) !important;
+}
+
+.sidebar-1tnWFu:hover > .panels-3wFtMD:after {
+  opacity: 1;
+}
+
+.panels-3wFtMD > div {
+  background: transparent !important;
+  border-radius: 5px 5px 0 0;
+}
+
+div[class="wrapper-3kah-n"][aria-label=" Serveur de 𝙎𝙇𝙀𝙀𝙕𝙕𝙄"]:after {
+  transform: rotatey(360deg) scale(1.2);
+  right: 1px;
+  content: "";
+  display: flex;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  transition: transform 1s, right 1s, background 1s;
+  filter: invert();
+  background: url('https://cdn.discordapp.com/attachments/1097535719716687902/1103778245960273931/svg.png?width=1000&height=1000') center/cover no-repeat;
+}
+
+div[class="defaultColor-1EVLSt text-lg-semibold-UQkeZc inboxTitle-EQkQZa"]:after {
+	content: " 📩";  
+}
+
+div[class="interactive-26HRN_ interactive-iyXY_x linkButton-2NshQj"], .content-3spvdd {
+  background: rgba(0, 0, 0, 0.2) !important;
+  border: 1px rgba(0, 0, 0, 0.1) solid;
+  border-radius: 5px;
+}
+
+.banner-1YaD3N.popoutBanner-3cqRD9, .banner-1YaD3N.profileBanner-1owKI5.roundedBanner-uNt2w- {
+  background: var(--user-banner) center/cover no-repeat !important;
+}
+
+.homeIcon-r0w4ny {
+  height: 40px;
+  width: 40px;
+  background: var(--home-icon) var(--home-position)/cover no-repeat;
+}
+
+.homeIcon-r0w4ny:hover {
+ animation-name: var(--home-animation);
+ animation-duration: var(--home-animation-duration)
+}
+
+.homeIcon-r0w4ny > path {
+  opacity: 0;
+}
+
+form[class="form-3gdLxP"] {
+  padding: 0;
+  margin: 0 16px -8px 16px;
+}
+
+.botTag-2mryIa > *, span[class="botText-1fD6Qk"], .botTagCozy-3NTBvK > *,
+div[class="nameTag-35jqbZ nameTag-H6kSJ0"] > span, h1[class="defaultColor-1EVLSt eyebrow-1Shfyi defaultColor-1GKx81 userInfoSectionHeader-2mYYun"], .socialLinks-3ywLUf > a[title="Instagram"] > svg, .socialLinks-3ywLUf > a[title="TikTok"] > svg {
+  color: white !important;
+}
+
+.userPopoutOuter-1OHwPL.userProfileOuter-2tQwNf.userProfileOuterThemed-2BgJCM {
+  padding: 0;
+  border: 4px solid white;
+}
