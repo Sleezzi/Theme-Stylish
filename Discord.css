@@ -18,7 +18,7 @@
     --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace;
     --mention-background-color: rgba(255, 0, 0, 0.5);
 /*                                            Background:																																						 */
-    --background: url(https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?resize=476%2C280&ssl=1);
+    --background: url("https://s2.best-wallpaper.net/wallpaper/2560x1440/1904/GTA-5-city-at-night-purple-style-skyscrapers_2560x1440.jpg");
     --background-shading: 100%;
     --background-overlay: rgba(0, 0, 0, 0.6); 
     --background-position: center;
@@ -47,9 +47,9 @@
     --user-background-grayscale: var(--background-grayscale);
     --user-background-sepia: var(--background-sepia);
     --user-background-blur: var(--background-blur);
-    --user-banner: url(https://sleezzi.github.io/TinyWorld/icons/user-banner.gif);
+    --user-banner: url("https://discord-france.fr/assets/img/pics/2020/04/Mod%C3%A8les-Banni%C3%A8re.jpg");
 /*                                            Home Icon & Animation:																																						 */
-    --home-icon: url(https://sleezzi.github.io/TinyWorld/icons/discord.svg);
+    --home-icon: url("https://png.pngitem.com/pimgs/s/108-1083749_white-discord-logo-png-png-free-discord-icon.png");
     --home-position: center;
     --home-size: 40px;
     --home-animation: easter-egg;
