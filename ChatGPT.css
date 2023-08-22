@@ -1,0 +1,49 @@
+/* Made by Sleezzi
+    Copyright © Sleezzi - 2022 - All right reserved*/
+
+:root {
+    --background: url("https://cdn.discordapp.com/attachments/892075644668739674/921063318700036156/707055.jpeg"); /* Le fond de la page, peut être une image avec le "url('LIEN')" - Default #333 */
+    --background-position: center; /* La position du fond sur la page - Default center */
+    --background-size: cover; /* La taille du fond sur la page (uniquement avec les images) - Default cover */
+    --background-repeat: no-repeat; /* Répétition de l'image sur le fond - Default no-repeat */
+    --background-brightness: 100%; /* Le niveau de luminosité du fond de la page - Default 100% */
+    --background-contrast: 100%; /* Le niveau de contrast du fond de la page - Default 100% */
+    --background-saturation: 100%; /* Le niveau de saturation du fond de la page - Default 100% */
+    --background-grayscale: 0%; /* Le niveau de gris du fond de la page - Default 0% */
+    --background-sepia: 0%; /* Le sepia du fond de la page - Default 0% */
+    --background-blur: 0px; /* Le flou du fond de la page - Default 0px */
+    --main-color: white; /* La couleur du text sur la page - Default white */
+}
+
+div [class="dark hidden flex-shrink-0 bg-gray-900 md:flex md:w-[260px] md:flex-col"] {
+  border-radius: 0 5px 5px 0;
+}
+
+li[data-testid="gpt-4-upsell"], a[class="flex px-3 min-h-[44px] py-1 items-center gap-3 transition-colors duration-200 text-white cursor-pointer text-sm hover:bg-gray-800 rounded-md"], div > a.flex.py-3.px-3.items-center.gap-3.transition-colors.duration-200.text-white.cursor-pointer.text-sm.hover\:bg-gray-800.rounded-md {
+  display: none;
+}
+
+div[class="dark flex-shrink-0 overflow-x-hidden bg-gray-900"]:before {
+  content: "";
+  display: flex;
+  height: 100%;
+  width: 260px;
+  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
+}
+
+.dark, .dark\:bg-gray-800, div[class="group w-full text-token-text-primary border-b border-black/10 dark:border-gray-900/50 dark:bg-gray-800"], div[class="group w-full text-token-text-primary border-b border-black/10 dark:border-gray-900/50 bg-gray-50 dark:bg-[#444654]"], div[class="absolute inset-y-0 right-0 w-8 z-10 bg-gradient-to-l from-gray-800"], div[class="react-scroll-to-bottom--css-anynf-79elbk h-full dark:bg-gray-800"], div[class="flex flex-col text-sm dark:bg-gray-800 h-full"], div[class="group w-full text-gray-800 dark:text-gray-100 border-b border-black/10 dark:border-gray-900/50 dark:bg-gray-800"], main > div > div, main > div > div > div > div, div[class="group w-full text-gray-800 dark:text-gray-100 border-b border-black/10 dark:border-gray-900/50 bg-gray-50 dark:bg-[#444654]"], .absolute.bottom-0.left-0.w-full.border-t.md\:border-t-0.dark\:border-white\/20.md\:border-transparent.md\:border-transparent.md\:bg-vert-light-gradient.bg-white.dark\:bg-gray-800.md\:\!bg-transparent.dark\:md\:bg-vert-dark-gradient.pt-2, .flex.p-4.gap-4.text-base.md\:gap-6.md\:max-w-2xl.lg\:max-w-xl.xl\:max-w-3xl.md\:py-6.lg\:px-0.m-auto, div[class="dark flex-shrink-0 overflow-x-hidden bg-gray-900"], div[class="flex flex-col gap-2 pb-2 text-gray-100 text-sm"] > div > span, div[class="flex flex-col gap-2 pb-2 text-gray-100 text-sm"] > div > span > div > div > h3, div[class="flex flex-col gap-2 pb-2 text-gray-100 text-sm"] > div > span > div > ol > li > a, div[class="flex flex-col gap-2 pb-2 text-gray-100 text-sm"] > div > span > div > ol > li > a, div[class="absolute inset-y-0 right-0 w-8 z-10 bg-gradient-to-l from-gray-900 group-hover:from-[#2A2B32]"] {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+h1[class="text-4xl font-semibold text-center text-gray-200 dark:text-gray-600 ml-auto mr-auto mb-10 sm:mb-16 flex gap-2 items-center justify-center flex-grow"], div[class="react-scroll-to-bottom--css-anynf-79elbk h-full dark:bg-gray-800"], div[class="md:flex items-start text-center gap-3.5"], h1[class="text-4xl font-semibold text-center mt-6 sm:mt-[20vh] ml-auto mr-auto mb-10 sm:mb-16 flex gap-2 items-center justify-center"], 
+div[class="relative flex w-[calc(100%-50px)] flex-col gap-1 md:gap-3 lg:w-[calc(100%-115px)]"] > div > div > *, div[class="relative flex w-[calc(100%-50px)] flex-col gap-1 md:gap-3 lg:w-[calc(100%-115px)]"] > div > div > * > p > code {
+  color: var(--main-color) !important;
+}
+
+body {
+  color: var(--main-color) !important;
+  background: var(--background) var(--background-position)/var(--background-size) no-repeat  !important;
+  filter: blur(var(--background-blur)) brightness(var(--background-brightness)) contrast(var(--background-contrast)) saturate(var(--background-saturation)) grayscale(var(--background-grayscale)) sepia(var(--backgroundsepia));
+}
